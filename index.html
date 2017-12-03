@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Food Search</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style-portfolio.css">
+        <link rel="stylesheet" href="css/picto-foundry-food.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="icon" href="favicon-1.ico" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="row">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Food Search</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav main-nav  clear navbar-right ">
+                            <li><a class="navactive color_animation" href="#top">WELCOME</a></li>
+                            <li><a class="color_animation" href="#story">ABOUT</a></li>
+                            <li><a class="color_animation" href="#Search">Search</a></li>
+                            <li><a class="color_animation" href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </div><!-- /.container-fluid -->
+        </nav>
+         
+        <div id="top" class="starter_container bg">
+            <div class="follow_container">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2 class="top-title"> Food Serach</h2>
+                    <h2 class="white second-title">" Best in the city "</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ About Us ============= -->
+
+        <section id="story" class="description_content">
+            <div class="text-content container">
+                <div class="col-md-6">
+                    <h1>About us</h1>
+                    <div class="fa fa-cutlery fa-2x"></div>
+                    <p class="desc-text">Food Search is a place for simplicity.Find good food. Simple is the name of the game, and we’re good at finding it in all the right places. Come join us and see what simplicity tastes like.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-section">
+                       <img src="images/kabob.jpg" width="250" height="220">
+                       <img src="images/limes.jpg" width="250" height="220">
+                       <div class="img-section-space"></div>
+                       <img src="images/radish.jpg"  width="250" height="220">
+                       <img src="images/corn.jpg"  width="250" height="220">
+                   </div>
+                </div>
+            </div>
+        </section>
+
+
+       <!-- ============ Food search  ============= -->
+
+
+        <section id ="Search" class="description_content">
+             <div class="pricing background_content">
+                <h1><span>Search</span>Food</h1>
+             </div>
+            <div class="text-content container">
+                <div class="container">
+                    <div class="row">
+                        <div id="search" class="divFilter">
+                            <label id="lblFilterHead">Filters</label>
+                            <div class="divContainer">
+                                <div id = app class="divFirstRow">
+                                    <label id="lblDescContains">Description/Ingredient contains: </label>
+                                    <input type="text" id="txtDescContains" v-model="amt">
+                                </div>
+                                <div class="divThirdRow">
+                                    <input type="checkbox" id="chkShowCurrEmp"/>
+                                    <label id="lblShowCurrEmp">Show favorite recipies only</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="divEntries">
+                            <label id="lblEntries">Search result Entries</label>
+                            <label id="lblTotalHoursWorked"></label>
+                            <div id="divEntriesHead">
+                                <label class="divEntriesColl" onclick="sort(0)" id="col0">Recipe name</label>
+                                <label class="divEntriesCol2" onclick="sort(1)" id="col1">Add to Favourite</label>
+                                <label class="divEntriesCol3" onclick="sort(2)" id="col2">Add to buy</label>
+                            </div>
+                            <div id="divEntriesList">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Contact Section  ============= -->
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="inner contact">
+                            <!-- Form Area -->
+                            <div class="contact-form">
+                                <!-- Form -->
+                                <form id="contact-us" method="post" action="contact.php">
+                                    <!-- Left Inputs -->
+                                    <div class="col-md-6 ">
+                                        <!-- Name -->
+                                        <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                                        <!-- Email -->
+                                        <input type="email" name="email" id="email" required="required" class="form" placeholder="Email" />
+                                        <!-- Subject -->
+                                        <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                                    </div><!-- End Left Inputs -->
+                                    <!-- Right Inputs -->
+                                    <div class="col-md-6">
+                                        <!-- Message -->
+                                        <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                                    </div><!-- End Right Inputs -->
+                                    <!-- Bottom Submit -->
+                                    <div class="relative fullwidth col-xs-12">
+                                        <!-- Send Button -->
+                                        <button type="submit" id="submit" name="submit" class="form-btn">Send Message</button> 
+                                    </div><!-- End Bottom Submit -->
+                                    <!-- Clear -->
+                                    <div class="clear"></div>
+                                </form>
+                            </div><!-- End Contact Form Area -->
+                        </div><!-- End Inner -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Footer Section  ============= -->
+
+        <footer class="sub_footer">
+            <div class="container">
+                <div class="col-md-4"><p class="sub-footer-text text-center">&copy; Restaurant 2014, Theme by <a href="https://themewagon.com/">ThemeWagon</a></p></div>
+                <div class="col-md-4"><p class="sub-footer-text text-center">Back to <a href="#top">TOP</a></p>
+                </div>
+                <div class="col-md-4"><p class="sub-footer-text text-center">Built With Care By <a href="#" target="_blank">Us</a></p></div>
+            </div>
+        </footer>
+
+
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
+        <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>     
+        <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
+        <script type="text/javascript" src="js/main.js" ></script>
+
+    </body>
+</html>
