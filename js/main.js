@@ -44,9 +44,5 @@
                 transitionSpeed: 350
             });
         });
-
-          $(function() {
-            $( "#datepicker" ).datepicker();
-        });
     
     };

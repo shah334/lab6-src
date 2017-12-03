@@ -265,13 +265,13 @@ INTRO CONTAINER
 }
 
 .beer.background_content{
-    background: url('../images/beer.jpg') no-repeat center center; 
+    background: url('../images/beer.jpg') no-repeat center center;
     background-size: cover;
     background-position: 70% 50%;
 }
 
 .bread.background_content{
-    background: url('../images/bread.jpg') no-repeat center center; 
+    background: url('../images/bread.jpg') no-repeat center center;
     background-size: cover;
     background-position: 70% 50%;
 }
@@ -282,7 +282,7 @@ INTRO CONTAINER
     background-attachment: fixed;
 }
  .pricing.background_content{
-    background: url('../images/pricing.jpg') no-repeat center center; 
+    background: url('../images/pricing.jpg') no-repeat center center;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -294,7 +294,7 @@ INTRO CONTAINER
     background-attachment: fixed;
 }
 .bread.background_content{
-    background: url('../images/breakfast.jpg') no-repeat center center; 
+    background: url('../images/breakfast.jpg') no-repeat center center;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -729,37 +729,6 @@ MEDIA QUERIES TABLET
         border-bottom: 10px solid #fff;
     }
 }
-    /*========================
-    Social Connect
-    =========================*/
-
-    section.social_connect {
-        background-color: black;
-        text-align: center;
-        margin-bottom: 50px;
-  }
-
-    .social_heading {
-        font-size: 33px;
-        margin: 50px 0 0 0;
-    }
-
-    .social_info a {
-        font-size: 24.93px;
-    }
-
-    .social_icons li a {
-        font-size: 30px;
-    }
-
-    .social_info a {
-        display: inline-block;
-        margin: 0 auto;
-        width: 325px;
-    } 
-
-} /*END OF MEDIA QUERY*/
-
 /*========================
 MEDIA QUERIE DESKTOP
 =========================*/
@@ -826,34 +795,61 @@ MEDIA QUERIE DESKTOP
         vertical-align: middle;
     }
 
-    /*========================
-    FIRST FOOTER CONTENT
-    =========================*/
+}
 
-    .social_heading {
-        font-size: 33px;
-        margin: 50px 0 0 0;
-    }
 
-    .come_in .social_info a {
-        font-size: 24.93px;
-        display: inline-block;
-        margin: 0 auto;
-        width: 565px;
-    }
+/*========================
+Search  BODY CONTENT
+=========================*/
 
-    .come_in .social_info {
-        margin-bottom: 25px;
-    }
 
-    .or_call .social_info a {
-        font-size: 24.93px;
-        display: inline-block;
-        margin: 0 auto;
-        width: auto;
-    }
+#lblFilterHead {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+}
 
-    .social_icons li a {
-        font-size: 30px;
-    }
+.divContainer {
+    position: absolute;
+    top: 700px;
+    width: 1500px;
+    text-align: center;
+}
+
+.divFirstRow {
+    margin-top: 20px;
+}
+
+
+.divThirdRow {
+    margin-top: 20px;
+}
+
+#lblEntries {
+    font-size: 30px;
+    display: inline-block;
+    width: 400px;
+}
+
+#divEntries {
+    position: absolute;
+    top:800px;
+    width:1700px;
+    margin-top: 100px;
+}
+
+#divEntriesList {
+    overflow-y: scroll;
+    height: 400px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#divEntriesHead {
+    margin-top: 20px;
+}
+
+.divEntriesRow {
+    position: relative;
+    width:1700px;
 }
