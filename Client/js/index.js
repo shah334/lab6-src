@@ -96,11 +96,10 @@ function displayEntries()
             var cell2 = row.insertCell(1);
             var cell3 = row.insertCell(2);
             var cell4 = row.insertCell(3);
-            cell1.innerHTML = data[i].label;
+            cell1.innerHTML = "<a href=\""+data[i].url+"\"target=\"_blank\">"+data[i].label+"</a>";
             cell2.innerHTML = "Add to Fav";
             cell3.innerHTML = "Add to Nutrition";
             cell4.innerHTML = "Add Ingredients";
-            cell1.setAttribute("onclick", "open1("+i+")");
             cell2.setAttribute("onclick", "insertfav("+i+")");
             cell3.setAttribute("onclick", "insertnutrition("+i+")");
             cell4.setAttribute("onclick", "insertingredient("+i+")");
