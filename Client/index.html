@@ -10,6 +10,7 @@
         <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
         <script type="text/javascript" src="js/main.js" ></script>
         <script type="text/javascript" src="js/index.js" ></script>
+        <script language="javascript" type="text/javascript" src="https://vuejs.org/js/vue.js"></script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css" media="screen" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -43,7 +44,10 @@
                         <ul class="nav navbar-nav main-nav  clear navbar-right ">
                             <li><a class="navactive color_animation" href="#top">WELCOME</a></li>
                             <li><a class="color_animation" href="#story">ABOUT</a></li>
+                            <li><a class="color_animation" href="#Search">INGREDIENTS</a></li>
+                            <li><a class="color_animation" href="#Search">NUTRITION</a></li>
                             <li><a class="color_animation" href="#Search">SEARCH</a></li>
+
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div>
@@ -81,9 +85,43 @@
             </div>
         </section>
 
+        <!-- ============ INGREDIENTS chart   ============= -->
+
+        <section id ="INGREDIENTS" class="description_content">
+            <div class="reservation background_content">
+                <h1><span>Ingredients</span>To Get</h1>
+            </div>
+            <div>
+                <div id="INGREDIENTS1" class="divFilter1">
+                    <div id="divEntriesList2">
+                        <label>List and amunt of ingredients should appear as you add food items.</label>
+                        <table style="width:100%" id="tablefill2">
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============ Nutrition chart  ============= -->
+
+        <section id ="NUTRITION" class="description_content">
+            <div class="beer background_content">
+                <h1><span>Nutrition</span>Meter</h1>
+            </div>
+            <div>
+                <div id="Nutrition1" class="divFilter1">
+                    <div id="divEntriesList1">
+                        <label>Nutrition chart should appear as you add food items.</label>
+                        <table style="width:100%" id="tablefill1">
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
        <!-- ============ Food search  ============= -->
-
 
         <section id ="Search" class="description_content">
              <div class="pricing background_content">
@@ -112,6 +150,7 @@
             </div>
             </div>
         </section>
+
 
     </body>
 </html>
